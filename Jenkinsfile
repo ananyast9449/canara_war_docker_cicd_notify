@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Check the docker installed or not'){
             steps {
-                sh 'docker --version'
+                sh 'sudo docker --version'
             }
         }
         stage('Run in the Dev Environment') {
